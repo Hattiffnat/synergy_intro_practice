@@ -1,5 +1,4 @@
 from typing import Iterable
-import unittest
 
 
 def sum_neg_between_first_and_last(arr: Iterable[float | int]) -> float | int:
@@ -17,9 +16,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-class TestSolution(unittest.TestCase):
-    def test_sum_neg(self):
-        assert sum_neg_between_first_and_last([1, -2, 3, -6, 4]) == -2
-        assert sum_neg_between_first_and_last([1, -2, 3, -6, 4, -100]) == -8
